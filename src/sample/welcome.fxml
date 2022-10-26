@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="320.0" style="-fx-background-color: #558776;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="10.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/RAD1.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="481.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="116.0" layoutY="63.0" text="WELCOME" textFill="#558776">
+               <font>
+                  <Font name="Verdana Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="141.0" text="TUITION CLASS" textFill="#558776">
+               <font>
+                  <Font name="Verdana Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="213.0" text="MANAGEMENT " textFill="#558776">
+               <font>
+                  <Font name="Verdana Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="127.0" layoutY="277.0" text="SYSTEM" textFill="#558776">
+               <font>
+                  <Font name="Verdana Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="217.0" layoutY="356.0" startX="-100.0" stroke="#558776" strokeWidth="3.0" />
+            <Button fx:id="clickmelog" layoutX="34.0" layoutY="434.0" mnemonicParsing="false" onAction="#clikmeLogbuttonAction" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #3c5186;" text="CLICK ME TO LOG" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="clickmeexit" layoutX="319.0" layoutY="436.0" mnemonicParsing="false" onAction="#ExitbuttonAction" style="-fx-background-color: #3c5186;" text="CLICK ME TO EXIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
